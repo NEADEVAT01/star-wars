@@ -164,23 +164,23 @@
     computed: {
       randomChars: function () {
         let randChars = []
-        randChars.push(this.Chars[Math.floor(Math.random() * this.Chars.length)])
-        randChars.push(this.Chars[Math.floor(Math.random() * this.Chars.length)])
-        randChars.push(this.Chars[Math.floor(Math.random() * this.Chars.length)])
+        for (let i = 0; i < 3; i++) {
+          randChars.push(this.Chars[Math.floor(Math.random() * this.Chars.length)])
+        }
         return randChars
       },
       randomShips: function () {
         let randShips = []
-        randShips.push(this.Ships[Math.floor(Math.random() * this.Ships.length)])
-        randShips.push(this.Ships[Math.floor(Math.random() * this.Chars.length)])
-        randShips.push(this.Ships[Math.floor(Math.random() * this.Ships.length)])
+        for (let i = 0; i < 3; i++) {
+          randShips.push(this.Ships[Math.floor(Math.random() * this.Ships.length)])
+        }
         return randShips
       },
       randomPlanets: function () {
         let randPlanets = []
-        randPlanets.push(this.Planets[Math.floor(Math.random() * this.Planets.length)])
-        randPlanets.push(this.Planets[Math.floor(Math.random() * this.Planets.length)])
-        randPlanets.push(this.Planets[Math.floor(Math.random() * this.Planets.length)])
+        for (let i = 0; i < 3; i++) {
+          randPlanets.push(this.Planets[Math.floor(Math.random() * this.Planets.length)])
+        }
         return randPlanets
       }
     },
